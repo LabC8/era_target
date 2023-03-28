@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<launch>
+    <node name="era_target_recognizer" pkg="era_target" type="era_target_recognizer" output="screen">
+        <param name="video_source" type="str" value="0" />
+        <param name="InImageWidth" type="int" value="3264" />
+        <param name="InImageHeight" type="int" value="2464" />
+        <param name="FrameRate" type="int" value="21" />
+        <param name="OutImageWidth" type="int" value="1280" />
+        <param name="OutImageHeight" type="int" value="966" />
+        <param name="TargetCenterToCenter" type="double" value="0.07" />
+        <!-- <param name="TargetHeightAbove" type="double" value="0.032" />
+        <param name="TargetDiameter" type="double" value="0.022" /> -->
+        <param name="TargetHeightAbove" type="double" value="0.04" />
+        <param name="TargetDiameter" type="double" value="0.013" />
+        <param name="FocalLenght" type="double" value="0.00296" />
+        <param name="PixelWidth" type="double" value="0.00000112" />
+        <param name="PixelHeight" type="double" value="0.00000112" />
+        <param name="SendImage" type="bool" value="true" />
+        <param name="SendContours" type="bool" value="true" />
+        <param name="SendCircles" type="bool" value="true" />
+        <param name="SendTriangles" type="bool" value="true" />
+        <param name="Threshold" type="int" value="150" />
+    </node>
+</launch>
